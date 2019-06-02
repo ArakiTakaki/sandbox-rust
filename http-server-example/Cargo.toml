@@ -1,0 +1,9 @@
+[package]
+name = "http-server-example"
+version = "0.1.0"
+authors = ["ArakiTakaki <araki_takaki@yahoo.co.jp>"]
+edition = "2018"
+
+[dependencies]
+hyper = "0.12.20"
+serde_json = "1.0.35"
