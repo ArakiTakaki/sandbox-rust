@@ -9,6 +9,8 @@ wasmの依存パッケージをダウンロードする `$ cargo add wasm-pack`
 
 ビルド方法 `$ wasm-pack build --scope sample` そのうちmakefileとかで書けばいい
 
+TypeScriptのd.tsを出力してくれるらしい
+
 ## Q&A
 
 基本的なこと

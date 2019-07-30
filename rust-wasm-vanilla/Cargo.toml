@@ -7,5 +7,16 @@ authors = ["ArakiTakaki <araki_takaki@yahoo.co.jp>"]
 [lib]
 crate-type = ["cdylib"]
 
+[dependencies.web-sys]
+version = "0.3.25"
+features = [
+  'Document',
+  'Element',
+  'HtmlElement',
+  'Node',
+  'Window',
+]
+
 [dependencies]
 wasm-bindgen = "0.2.48"
+# web-sys = "0.3.25"

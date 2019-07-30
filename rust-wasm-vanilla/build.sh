@@ -1,2 +1,3 @@
 wasm-pack build
-mv pkg ./server/wasm
+rm -rf ./server/src/wasm
+mv pkg ./server/src/wasm
