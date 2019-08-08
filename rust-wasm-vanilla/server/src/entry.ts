@@ -1,8 +1,9 @@
-const wasm = import('./wasm/rust_wasm_vanilla');
+const wasm = import('./wasm/rust_wasm_vanilla.js');
 
-console.log(wasm)
-wasm.then(wasm => {
-  console.log(wasm)
-  wasm.run();
-  wasm.greet('hello rust');
-})
+wasm
+  .then(wasm => {
+    wasm.run();
+  })
+  .catch(err => {
+    console.log(err);
+  });

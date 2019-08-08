@@ -19,20 +19,13 @@ pub fn run() -> Result<(), JsValue> {
     // Use `web_sys`'s global `window` function to get a handle on the global
     // window object.
     let window = web_sys::window().expect("error");
-
     let document = window.document().expect("should have a document on window");
-    let body = document.body().expect("document should have a body");
-
     // Manufacture the element we're gonna append
+    let entry = document.get_element_by_id("app").expect("document should have a app");
     let val = document.create_element("p")?;
+    let test = document.create_element("div")?;
+    entry.append_child(&test)?;
     val.set_inner_html("Hello from Rust!");
-
-    body.append_child(&val)?;
-
+    test.append_child(&val)?;
     Ok(())
-}
-
-#[test]
-fn run_test() {
-    run().expect("error");
 }
