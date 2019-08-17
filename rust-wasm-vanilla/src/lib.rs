@@ -29,3 +29,4 @@ pub fn run() -> Result<(), JsValue> {
     test.append_child(&val)?;
     Ok(())
 }
+
